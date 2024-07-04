@@ -9,7 +9,6 @@ import Container from './components/pages/layout/Container'
 import Navbar from './components/pages/layout/Navbar'
 import Footer from './components/pages/layout/Footer'
 
-
 function App() {
   return (
     <Router>
@@ -21,8 +20,7 @@ function App() {
           </Route>
           <Route path="/projects">
             <Projects />
-          </Route>          
-          <Route path="/company">
+          </Route><Route path="/company">
             <Company />
           </Route>
           <Route path="/contact">
@@ -34,6 +32,7 @@ function App() {
         </Container>
       </Switch>
       <Footer />
+      <p>Footer</p>
     </Router>
   )
 }
